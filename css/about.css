@@ -1,0 +1,242 @@
+body {
+  background: #fff;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+ border-radius: 20px 20px 0px 0px;
+}
+
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: relative !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: blue;
+	border-radius: 20px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #000;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: black;
+	font-family: Poppins, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+h2 {
+  color: black;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 1em 0;
+  }
+
+
+h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1em 0;
+  }
+
+p {
+	margin: 0;
+	padding: 0em 0;
+}
+
+
+/* Promo section */
+
+.logo,
+.site-title {
+	text-align: center;
+}
+
+.site-title {
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+/* Splash section */
+
+.splash {
+	background: #fff;
+	padding-bottom: 2em;
+}
+
+.splash-content {
+	padding: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+	.splash-text {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	.splash-text p {
+		padding-top: 0;
+	}
+}
+
+/* Buckets section */
+
+.buckets {
+	padding: 2em 1em 1em;
+	background: #fff;
+}
+
+.buckets ul {
+	margin: 0;
+	padding: 0;
+}
+
+.buckets li {
+	margin-bottom: 1em;
+	background: white;
+ border-radius: 20px 20px;
+	list-style-type: none;
+ border: 1px solid blue;
+}
+
+.bucket {
+	padding: 1.5em;
+ border-radius: 20px;
+}
+
+/* More section */
+
+.more {
+	padding: 2em;
+}
+
+/* Twins section */
+
+.twin {
+	padding: 2em;
+	background: blue;
+	color: white;
+}
+
+.twin:last-of-type {
+	background: #fff;
+}
+
+/* Colophon section */
+.colophon {
+	padding: 2em;
+	background: blue;
+	color: black;
+	text-align: center;
+}
+
+.colophon a {
+	color: black;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid blue;
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+	.grid {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/*--------------------------------------------------------------
+Use flex to create a three-bucket layout 
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.buckets ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.buckets li {
+			width: 31%;
+		}
+
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	/* Layout with CSS Grid */
+	@supports (display: grid) {
+
+		/* Four-column layout. Two center columns have a total max width of 50em: */
+		.grid {
+
+			display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+		}
+
+		/* Center items by placing them in the two center columns: */
+		.splash-content,
+		.more-content,
+		.buckets ul {
+			grid-column: 2/4;
+		}
+
+		/* Use automatic grid placement + span to let each item span two columns:*/
+
+		.twin,
+		.colophon aside {
+			grid-column: span 2;
+		}
+
+	}
+}

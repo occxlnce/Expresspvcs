@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | EPS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">EPS<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Solutions</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+<p class="pap"> ABOUT US:</p><hr>
+
+    <main id="content" class="main-area">
+      <section class="splash grid">
+        <div class="splash-content">
+          <h2 class="content-title">Our History</h2>
+          <div class="splash-text">
+			
+<p><b><a href="index.html">Express PVC Specialist</a></b>, founded in early 2023 by Amukelani Tharaga, is a dynamic and innovative company dedicated to delivering high-quality PVC products. Despite being a relatively young business, we have rapidly built a strong reputation for excellence in craftsmanship and customer satisfaction. Our portfolio showcases a diverse range of projects, including custom pool covers, stylish roller blinds, durable wedge awnings, and versatile retractable awnings. Each project we undertake is a testament to our commitment to quality and our passion for meeting the unique needs of our clients. At Express PVC Specialist, we believe in creating lasting solutions that combine functionality with aesthetic appeal, ensuring our customers receive the best possible experience. Join us on our journey as we continue to expand and set new standards in the PVC products industry.</p>
+		 </div><!-- .splash-text -->
+        </div><!-- .splash-content -->
+      </section><!-- .splash -->
+
+      <section class="buckets grid">
+        <ul>
+          <li>
+            <img src="img/Pvc4.jpg" alt="">
+            <div class="bucket">
+              <h3 class="bucket-title">Our Values</h3>
+              <p>We are guided by a set of core values that define who we are and how we operate. These values include integrity, excellence, innovation, and customer focus. We believe in upholding the highest standards of honesty, professionalism, and ethical conduct in all our interactions.</p>
+            </div><!-- .bucket -->
+          </li>
+          <li>
+            <img src="img/mission.jpg" alt="">
+            <div class="bucket">
+              <h3 class="bucket-title">Our Mission</h3>
+              <p>To enhance outdoor living spaces through innovative PVC solutions that combine functionality with aesthetic appeal. We strive to exceed customer expectations by delivering quality products and services that add value to their properties.</p>
+            </div><!-- .bucket -->
+          </li>
+          <li>
+            <img src="img/Pvc2.jpg" alt="">
+            <div class="bucket">
+              <h3 class="bucket-title">Our Vision</h3>
+              <p>To become the preferred choice for outdoor solutions by consistently delivering superior products, exceptional service, and innovative designs. We aim to expand our presence nationally and internationally while maintaining our commitment to quality and customer satisfaction.</p>
+            </div><!-- .bucket -->
+          </li>
+        </ul>
+      </section><!-- .buckets -->
+
+  <section class="more grid">
+    <div class="more-content">
+  
+    </div><!-- .more-content -->
+  </section><!-- .more -->
+
+  <section class="twins grid">
+    <div class="twin">
+      <h2 class="content-title">Our Commitment to Excellence and Innovation</h2>
+      <p>By maintaining a steadfast commitment to quality and excellence, we aim to build lasting relationships with our clients, partners, and the communities we serve. Join us as we pave the way towards a future where premium PVC products are accessible and affordable for everyone.</p>
+    </div>
+    <div class="twin">
+   
+    </div>
+  </section>
+
+    </main>
+	
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+  </body>
+</html>
