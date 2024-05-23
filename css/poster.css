@@ -86,6 +86,8 @@ sup {
 
 .info li {
   margin-top: 1.5em;
+  outline: 1px solid var(--color-black);
+  border-radius: 20px;
 }
 
 @media (min-width: 860px) {
