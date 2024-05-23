@@ -28,6 +28,7 @@ sup {
 .text-bold {
   font-weight: bold;
   font-color: blue;
+  paddding-bottom: 8vh;
 }
 
 .grid {
