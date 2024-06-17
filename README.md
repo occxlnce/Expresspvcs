@@ -2,6 +2,8 @@
 
 Welcome to the repository for the PVC Specialist website! This repository contains the HTML and CSS code for the website of PVC Specialist, your premier partner for innovative outdoor solutions.
 
+Demo: https://epvcs.co.za/
+
 ## Overview
 
 The PVC Specialist website is designed to showcase the expertise and services offered by PVC Specialist. From transforming outdoor spaces to delivering quality PVC solutions, PVC Specialist is committed to excellence in every project.
@@ -42,5 +44,3 @@ To view the website locally or make modifications, simply download the HTML and 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to explore the code and customize it to fit your needs. If you have any questions or suggestions, don't hesitate to reach out!
