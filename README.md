@@ -1,8 +1,8 @@
 # PVC Specialist Website
 
-Welcome to the repository for the PVC Specialist website! This repository contains the HTML and CSS code for the website of PVC Specialist, your premier partner for innovative outdoor solutions.
+Welcome to the repository for the PVC Specialist website! This repository contains the codes for the website of PVC Specialist, your premier partner for innovative outdoor solutions.
 
-Demo: https://epvcs.co.za/
+Live: https://epvcs.co.za/
 
 ## Overview
 
